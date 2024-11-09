@@ -1,0 +1,133 @@
+Language: LK_Cpp
+AccessModifierOffset: 4
+AlignAfterOpenBracket: BAS_DontAlign
+AlignArrayOfStructures: AIAS_Right
+AlignConsecutiveAssignments: None
+AlignConsecutiveBitfields: Consecutive
+AlignConsecutiveDeclarations: None
+AlignConsecutiveMacros: None
+AlignConsecutiveShortCaseStatements:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: true
+  AlignCaseArrows: false
+  AlignCaseColons: false
+AlignEscapedNewlines: ENAS_LeftWithLastLine
+AlignOperands: OAS_Align
+AlignTrailingComments: TCAS_Never
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowBreakBeforeNoexceptSpecifier: BNSS_Never
+AllowShortBlocksOnASingleLine: SBS_Empty
+AllowShortCaseExpressionOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: SFS_Inline
+AllowShortIfStatementsOnASingleLine: SIS_Never
+AllowShortLambdasOnASingleLine: SLS_Inline
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: false
+BinPackArguments: true
+BinPackParameters: BPPS_BinPack
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterEnum: true
+  AfterClass: true
+  AfterCaseLabel: true
+  AfterControlStatement: BWACS_Always
+  AfterFunction: true
+  AfterNamespace: true
+  AfterStruct: true
+  AfterUnion: true
+  AfterExternBlock: true
+  BeforeCatch: true
+  BeforeElse: true
+  BeforeLambdaBody: true
+  BeforeWhile: true
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+BreakAdjacentStringLiterals: true
+BreakAfterAttributes: ABS_Never
+BreakAfterReturnType: RTBS_Automatic
+BreakAfterBinaryOperator: BOS_None
+# BreakBeforeBraces: BS_Allman
+BreakBeforeConceptDeclarations: BBCDS_Always
+BreakBeforeTernaryOperator: false
+BreakBinaryOperations: BBO_RespectPrecedence
+BreakConstructorInitializers: BCIS_BeforeComma
+BreakFunctionDefinitionParameters: false
+BreakInheritanceList: BILS_BeforeComma
+BreakStringLiterals: false
+BreakTemplateDeclarations: BTDS_Yes
+ColumnLimit: 180
+CompactNamespaces: false
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+Cpp11BracedListStyle: true
+EmptyLineAfterAccessModifier: ELAAMS_Never
+EmptyLineBeforeAccessModifier: ELBAMS_Always
+FixNamespaceComments: true
+IncludeBlocks: IBS_Regroup
+IndentAccessModifiers: true
+IndentCaseBlocks: true
+IndentCaseLabels: false
+IndentExternBlock: IEBS_AfterExternBlock
+IndentGotoLabels: true
+IndentPPDirectives: PPDIS_BeforeHash
+IndentRequiresClause: false
+IndentWidth: 4
+IndentWrappedFunctionNames: true
+InsertBraces: false
+KeepEmptyLines:
+  AtEndOfFile: false
+  AtStartOfBlock: false
+  AtStartOfFile: false
+LambdaBodyIndentation: LBI_OuterScope
+NamespaceIndentation: NI_Inner
+PPIndentWidth: 2
+PackConstructorInitializers: PCIS_CurrentLine
+PointerAlignment: PAS_Left
+QualifierAlignment: QAS_Left
+ReferenceAlignment: RAS_Pointer
+ReflowComments: RCS_Never
+RequiresClausePosition: RCPS_OwnLine
+RequiresExpressionIndentation: REI_OuterScope
+SeparateDefinitionBlocks: SDS_Leave
+SortIncludes: SI_CaseInsensitive
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceAroundPointerQualifiers: SAPQ_Default
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: true
+SpaceBeforeInheritanceColon: true
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: false
+  AfterForeachMacros: false
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: false
+  AfterOverloadedOperator: false
+  AfterPlacementOperator: true
+  AfterRequiresInClause: false
+  AfterRequiresInExpression: false
+  BeforeNonEmptyParentheses: false
+SpaceBeforeRangeBasedForLoopColon: false
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: SIAS_Never
+SpacesInParens: Custom
+SpacesInParensOptions:
+  ExceptDoubleParentheses: false
+  InConditionalStatements: false
+  InCStyleCasts: false
+  InEmptyParentheses: false
+  Other: false
+SpacesInSquareBrackets: false
+TabWidth: 4
+UseTab: UY_Always
