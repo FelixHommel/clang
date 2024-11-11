@@ -1,9 +1,9 @@
-Language: LK_Cpp
+Language: Cpp
 AccessModifierOffset: 4
-AlignAfterOpenBracket: BAS_DontAlign
-AlignArrayOfStructures: AIAS_Right
+AlignAfterOpenBracket: DontAlign 
+AlignArrayOfStructures: Right
 AlignConsecutiveAssignments: None
-AlignConsecutiveBitfields: Consecutive
+AlignConsecutiveBitFields: None
 AlignConsecutiveDeclarations: None
 AlignConsecutiveMacros: None
 AlignConsecutiveShortCaseStatements:
@@ -12,30 +12,30 @@ AlignConsecutiveShortCaseStatements:
   AcrossComments: true
   AlignCaseArrows: false
   AlignCaseColons: false
-AlignEscapedNewlines: ENAS_LeftWithLastLine
-AlignOperands: OAS_Align
-AlignTrailingComments: TCAS_Never
+AlignEscapedNewlines: Left
+AlignOperands: Align
+AlignTrailingComments: false
 AllowAllArgumentsOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
-AllowBreakBeforeNoexceptSpecifier: BNSS_Never
-AllowShortBlocksOnASingleLine: SBS_Empty
-AllowShortCaseExpressionOnASingleLine: true
+AllowBreakBeforeNoexceptSpecifier: Never
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseExpressionOnASingleLine: true #clang-format 19
 AllowShortCaseLabelsOnASingleLine: true
 AllowShortCompoundRequirementOnASingleLine: true
 AllowShortEnumsOnASingleLine: false
-AllowShortFunctionsOnASingleLine: SFS_Inline
-AllowShortIfStatementsOnASingleLine: SIS_Never
-AllowShortLambdasOnASingleLine: SLS_Inline
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: Inline
 AllowShortLoopsOnASingleLine: false
 AlwaysBreakBeforeMultilineStrings: false
 BinPackArguments: true
-BinPackParameters: BPPS_BinPack
+BinPackParameters: true
 BreakBeforeBraces: Custom
 BraceWrapping:
   AfterEnum: true
   AfterClass: true
   AfterCaseLabel: true
-  AfterControlStatement: BWACS_Always
+  AfterControlStatement: Always
   AfterFunction: true
   AfterNamespace: true
   AfterStruct: true
@@ -45,60 +45,61 @@ BraceWrapping:
   BeforeElse: true
   BeforeLambdaBody: true
   BeforeWhile: true
+  IndentBraces: true
   SplitEmptyFunction: false
   SplitEmptyRecord: false
 BreakAdjacentStringLiterals: true
-BreakAfterAttributes: ABS_Never
-BreakAfterReturnType: RTBS_Automatic
-BreakAfterBinaryOperator: BOS_None
-# BreakBeforeBraces: BS_Allman
-BreakBeforeConceptDeclarations: BBCDS_Always
-BreakBeforeTernaryOperator: false
-BreakBinaryOperations: BBO_RespectPrecedence
-BreakConstructorInitializers: BCIS_BeforeComma
+BreakAfterAttributes: Never #clang-format 16
+BreakAfterReturnType: Automatic
+BreakBeforeBinaryOperators: None
+# BreakBeforeBraces: Allman
+BreakBeforeConceptDeclarations: true
+BreakBeforeTernaryOperators: false
+# BreakBinaryOperations: RespectPrecedence #clang-format 20
+BreakConstructorInitializers: BeforeComma
 BreakFunctionDefinitionParameters: false
-BreakInheritanceList: BILS_BeforeComma
+BreakInheritanceList: BeforeComma
 BreakStringLiterals: false
-BreakTemplateDeclarations: BTDS_Yes
-ColumnLimit: 180
+BreakTemplateDeclarations: true
+ColumnLimit: 150
 CompactNamespaces: false
 ConstructorInitializerIndentWidth: 4
 ContinuationIndentWidth: 4
 Cpp11BracedListStyle: true
-EmptyLineAfterAccessModifier: ELAAMS_Never
-EmptyLineBeforeAccessModifier: ELBAMS_Always
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: Always
 FixNamespaceComments: true
-IncludeBlocks: IBS_Regroup
+IncludeBlocks: Regroup
 IndentAccessModifiers: true
 IndentCaseBlocks: true
 IndentCaseLabels: false
-IndentExternBlock: IEBS_AfterExternBlock
+IndentExternBlock: AfterExternBlock
 IndentGotoLabels: true
-IndentPPDirectives: PPDIS_BeforeHash
+IndentPPDirectives: BeforeHash
 IndentRequiresClause: false
 IndentWidth: 4
 IndentWrappedFunctionNames: true
 InsertBraces: false
-KeepEmptyLines:
+KeepEmptyLines: #clang-format 19
   AtEndOfFile: false
   AtStartOfBlock: false
   AtStartOfFile: false
-LambdaBodyIndentation: LBI_OuterScope
-NamespaceIndentation: NI_Inner
+LambdaBodyIndentation: OuterScope
+NamespaceIndentation: Inner
 PPIndentWidth: 2
-PackConstructorInitializers: PCIS_CurrentLine
-PointerAlignment: PAS_Left
-QualifierAlignment: QAS_Left
-ReferenceAlignment: RAS_Pointer
-ReflowComments: RCS_Never
-RequiresClausePosition: RCPS_OwnLine
-RequiresExpressionIndentation: REI_OuterScope
-SeparateDefinitionBlocks: SDS_Leave
-SortIncludes: SI_CaseInsensitive
+PackConstructorInitializers: CurrentLine
+PointerAlignment: Left
+QualifierAlignment: Left
+ReferenceAlignment: Pointer
+ReflowComments: false
+RequiresClausePosition: OwnLine
+RequiresExpressionIndentation: OuterScope #clang-format 16
+SeparateDefinitionBlocks: Leave
+SortIncludes: CaseInsensitive
 SpaceAfterCStyleCast: false
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
-SpaceAroundPointerQualifiers: SAPQ_Default
+SpaceAroundPointerQualifiers: Default
 SpaceBeforeAssignmentOperators: true
 SpaceBeforeCaseColon: false
 SpaceBeforeCpp11BracedList: true
@@ -120,8 +121,9 @@ SpaceBeforeRangeBasedForLoopColon: false
 SpaceBeforeSquareBrackets: false
 SpaceInEmptyBlock: false
 SpacesBeforeTrailingComments: 1
-SpacesInAngles: SIAS_Never
-SpacesInParens: Custom
+SpacesInAngles: Never
+SpacesInParentheses: false
+SpacesInParens: Custom #clang-format 17
 SpacesInParensOptions:
   ExceptDoubleParentheses: false
   InConditionalStatements: false
@@ -130,4 +132,4 @@ SpacesInParensOptions:
   Other: false
 SpacesInSquareBrackets: false
 TabWidth: 4
-UseTab: UY_Always
+UseTab: Always
